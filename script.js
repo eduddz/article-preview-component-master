@@ -1,8 +1,8 @@
 const perfil = document.querySelector('.perfil')
 const social = document.querySelector('.share')
 const active = document.querySelector('.active-desktop')
-let booleano = true
 const x = window.matchMedia("(max-width: 1439px)")
+let booleano = true
 
 function share() {
     if (x.matches) {
@@ -18,9 +18,11 @@ function share() {
     }
 }
 
-perfil.addEventListener('mouseover', function () { 
-    return active.style.display="flex"
+perfil.addEventListener('click', function () { 
+    active.style.display = "flex"
+    share()
 })
-perfil.addEventListener('mouseout', function () { 
-    return active.style.display="none"
+perfil.addEventListener('click', function () { 
+    active.style.display = "none"
+    share()
 })
