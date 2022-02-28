@@ -1,4 +1,4 @@
-# Frontend Mentor - Article preview component
+# Article preview component
 
 ## Welcome! 👋
 
